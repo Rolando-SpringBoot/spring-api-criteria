@@ -1,0 +1,21 @@
+exception:
+  #Business Exceptions
+  businessException:
+    -
+      code: BUSI_XXX
+      desc: Mensaje que aparecerá como causa de la excepción BUSI_001
+    -
+      code: BUSI_XXY
+      desc: Mensaje que aparecerá como causa de la excepción BUSI_003
+      
+  #Technichal Exceptions
+  technicalException:
+    -
+      code: TECH_099
+      desc: Error de conexión al servicio WS de Programaciones - Hola
+      
+  #Security Exceptions
+  securityException:
+    -
+      code: SECU_099
+      desc: Error en la seguridad debido a token invalido

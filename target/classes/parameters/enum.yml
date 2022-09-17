@@ -1,0 +1,113 @@
+# validacion request param
+campoRequerido : es un campo requerido
+rangoFechas : es mayor que
+
+#Enum para los tipos de datos que son obligatorios en la busqueda.
+enum.tipo.general.codigo: 1
+enum.tipo.general.descripcion: General
+
+enum.tipo.servicio.codigo : 2
+enum.tipo.servicio.descripcion : Servicio
+
+enum.tipo.tipo_producto.codigo : 3
+enum.tipo.tipo_producto.descripcion : Tipo de producto
+
+enum.tipo.servicio_tipo_producto.codigo : 4
+enum.tipo.servicio_tipo_producto.descripcion : Servicio y tipo de producto
+
+
+#Enumerados instalacion
+infraestructura.atribvig.administrador: 242
+infraestructura.atribvig.titular: 247
+infraestructura.atribvig.operador: 248
+infraestructura.atribvig.tipoInfraestructura: 249
+infraestructura.atribvig.codigo: 250
+infraestructura.atribvig.medible: 2091
+infraestructura.atribvig.codigosifco: 2238
+infraestructura.atribvig.codigointernacional: 2242
+infraestructura.atribvig.indvirtual: 2366
+
+puntoconex.atribvig.codigo: 276
+puntoconex.atribvig.capnominalentrada: 1783
+puntoconex.atribvig.capnominalsalida: 1784
+puntoconex.atribvig.codigointernacional: 2165
+puntoconex.atribvig.capentradafirme: 2167
+puntoconex.atribvig.capentradaintfisica: 2168
+puntoconex.atribvig.capentradaintcc: 2169
+puntoconex.atribvig.capsalidafirme: 2170
+puntoconex.atribvig.capsalidaintfisica: 2171
+puntoconex.atribvig.capsalidaintcc: 2172
+puntoconex.atribvig.operadorinternacional: 2221
+puntoconex.atribvig.refpcsnacional: 2222
+puntoconex.atribvig.refpcsinternacional: 2223
+puntoconex.atribvig.codigosifco: 2237
+puntoconex.atribvig.indvirtualpc: 2377
+
+agrupInfraestructura.atribvig.codigointernacional: 2240
+agrupInfraestructura.atribvig.codigo: 391
+
+
+
+#Enumerados operacionesAuxiliares
+entidad.codigo.oferta: MSCOF
+entidad.codigo.producto: MSCPR
+entidad.codigo.transaccion: MSCTR
+entidad.codigo.casacion: MSCCA
+
+
+
+#Enumerados sujetos
+sujeto.atribvig.codsujeto: 55
+sujeto.atribvig.razonsocial: 56
+sujeto.atribvig.codigocorto: 57
+sujeto.atribvig.codsifco: 2092
+sujeto.atribvig.codinternacional: 2094
+sujeto.atribvig.indfam: 2257
+sujeto.atribvig.indhpvb: 2263
+sujeto.atribvig.indhavb: 2386
+sujeto.atribvig.indhtvb: 2387
+sujeto.atribvig.contacto: 2388
+sujeto.atribvig.indiarmc: 2432
+
+sujeto.atribvig.fam.extinguido: 1078
+sujeto.atribvig.fam.suspendido: 1077
+sujeto.atribvig.fam.suspendidoparcial: 1076
+sujeto.atribvig.fam.habilitado: 1075
+sujeto.atribvig.fam.entramite: 1074
+sujeto.atribvig.fam.suspensiontemporal: 1092
+
+sujeto.atribvig.iarmc.habilitado: 54
+sujeto.atribvig.iarmc.deshabilitado: 55
+
+sujeto.topic.accion.alta: 0
+sujeto.topic.accion.modificacion: 1
+sujeto.topic.accion.baja: 2
+
+
+enum.sujeto.estadohabilitacion.extinguido1: 1073
+enum.sujeto.estadohabilitacion.extinguidoreparto: 1094
+enum.sujeto.estadohabilitacion.suspensiontemporal2: 1093
+
+sujeto.tipo.comercializador: 1
+sujeto.tipo.cdm: 2
+sujeto.tipo.distribuidor: 3
+sujeto.tipo.gts: 4
+sujeto.tipo.transportista: 5
+
+sujeto.identificadorgts: 82
+
+
+
+#Constantes estado de la entidad oferta
+oferta.estado.provisional: 1
+oferta.estado.enviada: 2
+oferta.estado.casada: 3
+oferta.estado.compatible: 9
+oferta.estado.precasada: 10
+oferta.estado.programada: 16
+
+#Cantidad maxima productos
+getProducts.cantidadMaxima: 100
+
+#Consulta de parametros
+admin.param.idn.limiteprogramada: 15

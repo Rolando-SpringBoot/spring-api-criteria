@@ -1,0 +1,76 @@
+# Server
+server:
+  port : 8085
+  
+# Spring
+spring:
+  profiles:
+    active: default
+  application:
+    name: msc-producto
+    version: 1.0.0-SNAPSHOT
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://enagas-msc-dev-aurora.cluster-ccdvsgrcasuf.eu-west-1.rds.amazonaws.com:5542/auroramsc
+    username: MSC2_OWN
+    password: Temporal01.
+    hikari:
+      maximum-pool-size: 2
+      connection-init-sql: SET application_name = '${spring.application.name} - ${userName}'
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        default_schema: msc2
+
+# Logging
+logging:
+  pattern:
+    level: DEBUG
+    console: "%d{dd-MM-yyyy HH:mm:ss.SSS} %-5level %logger{18}.%M - %msg%n"
+    file: "%d{dd-MM-yyyy HH:mm:ss.SSS} - %-5level - %logger{18} - %msg%n"
+  file:
+    path: /dev/logs/MSC
+    name: ${logging.file.path}\@project.artifactId@.log
+
+log.traceio: true
+resttemplate.enableLogs: true
+
+# Security
+com.enagas.arch.security.jwt.enabled: false
+
+#External Endpoints
+endpoint.service.enagas.msc.oferta: http://localhost:8080/oferta
+endpoint.service.enagas.msc.servicio: http://localhost:8086/servicio
+endpoint.service.enagas.msc.instalacion: http://localhost:8083/instalacion
+endpoint.service.enagas.msc.operacionesauxiliares: http://localhost:8084/operacionesauxiliares
+endpoint.service.enagas.msc.sujeto: http://localhost:8087/sujeto
+
+endpoint.method.get.tunidadmedida.ids: /tunidadmedida/ids
+endpoint.method.get.tunidadprecio.ids: /tunidadprecio/ids
+endpoint.method.get.consultarOfertaDeProducto: /consultarOfertaDeProducto
+endpoint.method.get.consultarCapacidadYCantidadDeProducto: /consultarCapacidadYCantidadDeProducto
+endpoint.method.get.tservicioatratribvigs: /tservicioatratribvigs
+endpoint.method.get.getUnidadPrecio: /tunidadprecio/servatrfecvig
+endpoint.method.get.tservicioatrs: /tservicioatrs/id/
+endpoint.method.get.testadoentidads: /testadoentidads
+endpoint.method.get.tserviciosatrs: /tservicios-atrs
+endpoint.method.post.getConsultOnlyOffers: /getConsultOnlyOffers
+endpoint.method.post.consultarAtributoConVigencia: /consultarAtributoConVigencia
+endpoint.method.post.generarDescripcionInstalacion: /generarDescripcionInstalacion
+endpoint.method.post.obtieneCodigoEntidad: /obtienecodigoentidad
+endpoint.method.post.obtieneOfertas: /obtieneOfertas
+endpoint.method.get.obtiene-ofertas-slots: /obtiene-ofertas-slots
+endpoint.method.get.tservofertado: /tservofertado
+
+endpoint.method.get.typeProductAssociatedServices: /type-product-associated-services
+endpoint.method.get.isServiceSlot: /service-slot
+endpoint.method.get.getDiaGas: /getdiagas/
+
+endpoint.method.post.accesoValidarHabilitacion: /acceso-validar-habilitacion
+
+endpoint.service.enagas.msc.operacionesaux: http://localhost:8082/administracionparametros
+endpoint.method.post.consultarParametroTipoAdmin: /consultarParametroTipoAdmin

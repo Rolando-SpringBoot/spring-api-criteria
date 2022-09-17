@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.enagas.arch</groupId>
+		<artifactId>ena-arch-starter</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.enagas.msc</groupId>
+	<artifactId>msc-producto</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>msc-producto</name>
+	<description>Spring CRUD API for EntidadProducto</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.enagas.arch</groupId>
+			<artifactId>ena-arch-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.enagas.arch</groupId>
+			<artifactId>ena-arch-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.enagas.arch</groupId>
+			<artifactId>ena-arch-logger</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.enagas.arch</groupId>
+			<artifactId>ena-arch-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.enagas.arch</groupId>
+			<artifactId>ena-arch-rest-template</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.enagas.arch</groupId>
+			<artifactId>ena-arch-shared-data</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.enagas.arch</groupId>
+			<artifactId>ena-arch-openapi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

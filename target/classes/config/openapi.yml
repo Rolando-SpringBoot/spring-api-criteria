@@ -1,0 +1,55 @@
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+  packages-to-scan:
+    - com.enagas.msc
+    
+  info:
+    title: API para los productos
+    description: API para los productos
+    version: 1.0.0
+    termsOfServiceUrl: 
+    contact:
+      name: 
+      url: 
+      email: 
+    license:
+      name: 
+      url: 
+      
+  components:
+    schemes:
+      - 
+        name: Authorization
+        scheme: bearer
+        bearerFormat: JWT
+        in: header
+        type: http
+        
+    parameters: 
+      -
+        name: idTransaccion
+        description: Id de la transaccion
+        example: 00000001
+        required: true
+        in: header
+        style: simple
+      -
+        name: enagasCodUsuario
+        description: Código usuario Enagas
+        example: 99
+        required: false
+        in: header
+        style: simple
+      -
+        name: token
+        description: Token
+        example: 55555
+        required: false
+        in: header
+        style: simple
+        
+    servers:
+        
